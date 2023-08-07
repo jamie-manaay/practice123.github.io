@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jamie</title>
+        <style>
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            form {
+                text-align: center;
+                margin-top: 20px;
+            }
+        </style>
+
+         <script>
+            function checkLogin() {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+    
+                // Replace "a" and "b" with your actual username and password
+                var correctUsername = "jamie_manaay";
+                var correctPassword = "password123";
+    
+                if (username === correctUsername && password === correctPassword) {
+                    window.location.href = "https://www.youtube.com";
+                } else {
+                    alert("Invalid username or password. Please try again.");
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <img src="download.jpg" alt="image not available" style="width: 50%;">
+        
+        <form>
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="button" value="Login" onclick="checkLogin()">
+    
+        </form>
+        <h1></h1>
+
+    </body>
+
+</html>
